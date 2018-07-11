@@ -2,8 +2,17 @@
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <style>
+  div.move {
+position:fixed;  
+}
+div.move a{
+font-size: 40px;
+color: #785bb7;
+text-shadow: 12px 12px 10px black;
+}
+  
 body {
-  background-color:blue;
+  background-color:#3a7f87;
   color:black;
 }
   div.main {
@@ -17,5 +26,56 @@ body {
   </div>
 
 </body>
+  <footer>
+      <script>
+    $(document).ready(function(){
+    animateDiv();
+    
+});
+
+function makeNewPosition(){
+    
+    // Get viewport dimensions (remove the dimension of the div)
+    var h = $(window).height() - 50;
+    var w = $(window).width() - 50;
+    
+    var nh = Math.floor(Math.random() * h);
+    var nw = Math.floor(Math.random() * w);
+    
+    return [nh,nw];    
+    
+}
+
+function animateDiv(){
+    var newq = makeNewPosition();
+    var oldq = $('.move').offset();
+    var speed = calcSpeed([oldq.top, oldq.left], newq);
+    
+    $('.move').animate({ top: newq[0], left: newq[1] }, speed, function(){
+      animateDiv();        
+    });
+    
+};
+
+function calcSpeed(prev, next) {
+    
+    var x = Math.abs(prev[1] - next[1]);
+    var y = Math.abs(prev[0] - next[0]);
+    
+    var greatest = x > y ? x : y;
+    
+    var speedModifier = 0.1;
+
+    var speed = Math.ceil(greatest/speedModifier);
+
+    return speed;
+
+}
+
+$('div#add').addClass("move");
+$('div#add').delay(slow).removeClass("move");
+
+  </script>
+  </footer>
 </html>
 
