@@ -3,6 +3,32 @@
   <meta property="og:image" content="http://www.cxejohns.com/images/cowboy.gif">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <style>
+  html {
+  width: 100%;
+  height: 100px;
+  border: 1px solid grey;
+  animation: animate 0.25s infinite;
+}
+@keyframes animate{
+  0%{ 
+    cursor: url("http://jantimon.nl/running_man/running_man_1.png"), auto;
+  }
+  20%{ 
+    cursor: url("http://jantimon.nl/running_man/running_man_2.png"), auto;
+  }
+  40%{ 
+    cursor: url("http://jantimon.nl/running_man/running_man_3.png"), auto;
+  }
+  60%{ 
+    cursor: url("http://jantimon.nl/running_man/running_man_4.png"), auto;
+  }
+  80%{ 
+    cursor: url("http://jantimon.nl/running_man/running_man_5.png"), auto;
+  }
+  100%{ 
+    cursor: url("http://jantimon.nl/running_man/running_man_1.png"), auto;
+  }
+}
   div.move {
 position:fixed;  
 }
