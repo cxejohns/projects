@@ -3,11 +3,21 @@
   <meta property="og:image" content="http://www.cxejohns.com/images/cowboy.gif">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <style>
+.blood {
+    top:0px;
+    left:0px;
+    position:absolute;
+    z-index:00;
+    width:2px;
+    height:2000px;
+    background:red;
+}
   html {
   width: 100%;
   height: 100px;
   border: 1px solid grey;
   animation: animate 0.25s infinite;
+    
 }
 @keyframes animate{
   0%{ 
@@ -60,10 +70,14 @@ text-shadow: 12px 12px 10px black;
   <!--________________________________________________________________________________________~~-->
    <!--BODY~~BODY~~BODY~~BODY~~BODY~~BODY~~BODY~~BODY~~BODY~~BODY~~BODY~~BODY~~BODY~~BODY~~BODY~~-->
 <body>
+  <div id="site">
+    <div id="bloodZone">
   <div class="main">
 <h1>Welcome to my Wild World</h1>
   </div>
   <div class='move'><a href="horse/play.html">Horse Racer</a></div>
+      </div>
+</div>
 </body>
   <!--BODY~~BODY~~BODY~~BODY~~BODY~~BODY~~BODY~~BODY~~BODY~~BODY~~BODY~~BODY~~BODY~~BODY~~BODY~~-->
   <!--________________________________________________________________________________________~~-->
@@ -121,6 +135,51 @@ $('div#add').addClass("move");
 $('div#add').delay(slow).removeClass("move");
 
   </script>
+   <script>
+     // Snow Falling
+    function fallingSnow() {
+        var $snowflakes = $(),
+            createSnowflakes = function () {
+                var qt = 800;
+                for (var i = 0; i < qt; ++i) {
+          var $snowflake = $('<div class="blood"></div>');
+          $snowflake.css({
+                        'left': (Math.random() * $('#site').width()) + 'px',
+                        'top': (Math.random() * $('#site').height()) + 'px'
+                    });
+                    // add this snowflake to the set of snowflakes
+                    $snowflakes = $snowflakes.add($snowflake);
+                }
+                $('#bloodZone').prepend($snowflakes);
+            },
+            
+            runSnowStorm = function() {
+                $snowflakes.each(function() {
+                    
+                    var singleAnimation = function($flake) {
+                        $flake.animate({
+                            top: "500px",
+                            opacity : "0",
+                        }, Math.random()*-2500 + 5000, function(){
+                            // this particular snow flake has finished, restart again
+                            $flake.css({
+                 'left': (Math.random() * $('#site').width()) + 'px',
+                 'top': (- Math.random() * $('#site').height()) + 'px',
+                'opacity': 1
+                            });
+                            singleAnimation($flake);
+                        });
+                    };
+                    singleAnimation($(this));
+                });
+        };
+        
+        createSnowflakes();
+        runSnowStorm();
+    }
+    fallingSnow();
+    
+    </script>
   </footer>
 </html>
 
