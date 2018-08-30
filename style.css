@@ -5,3 +5,56 @@
   background-color: lightblue;
   border: solid black 1px;
 }
+
+  .indifferent_sun {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  margin-left: 200px;
+  text-align: center center;
+  border-radius: 50px 50px 50px 50px;
+  -webkit-animation-name: bounce;
+  /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 4s;
+  /* Chrome, Safari, Opera */
+  -webkit-animation-iteration-count: 3;
+  /* Chrome, Safari, Opera */
+  -webkit-animation-direction: alternate;
+  /* Chrome, Safari, Opera */
+  animation-name: bounce;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+}
+/* Chrome, Safari, Opera */
+
+@-webkit-keyframes bounce {
+  0% {
+    background-color: red;
+    top: 0px;
+  }
+  50% {
+    background-color: orange;
+    top: 200px;
+  }
+  100% {
+    background-color: yellow;
+    top: 0px;
+  }
+}
+/* Standard syntax */
+
+@keyframes bounce {
+  0% {
+    background-color: red;
+    top: 0px;
+  }
+  50% {
+    background-color: orange;
+    top: 200px;
+  }
+  100% {
+    background-color: yellow;
+    top: 0px;
+  }
