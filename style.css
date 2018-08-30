@@ -91,3 +91,17 @@ div.sunc{
     -o-border-image: url(cxejohns.com/images/frame2.png) 30 stretch; /* Opera 11-12.1 */
     border-image: url(cxejohns.com/images/frame2.png) 30 stretch;
 }
+  
+  div.sunblocka, div.sunblockb, div.sunblockc {
+width: 1000px;
+height:10000px;
+background-color:yellow;
+position:fixed;
+    
+}
+div.sunblockb{
+    background-color:orange;
+}
+div.sunblockc{
+    background-color:red;
+}
