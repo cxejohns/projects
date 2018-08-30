@@ -58,3 +58,17 @@
     background-color: yellow;
     top: 0px;
   }
+  
+  div.suna, div.sunb, div.sunc {
+width: 2px;
+height:10000px;
+ background-color:red;
+position:fixed;
+    
+}
+div.sunb{
+    background-color:yellow;
+}
+div.sunc{
+    background-color:orange;
+}
