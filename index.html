@@ -11,21 +11,29 @@
     });
 })
  </script>
- <style>
-.frame { 
-  width: 100% 100vw;
-  height: 100% 100vh;
-  position: relative; 
-  background-image: url("cxejohns.com/images/frame.png"); 
-  background-repeat:no-repeat; 
-  background-size:100% 100vh; }
-  </style>
+ <style> 
+#borderimg1 { 
+    border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(cxejohns.com/images/frame.png) 30 round; /* Safari 3.1-5 */
+    -o-border-image: url(cxejohns.com/images/frame.png) 30 round; /* Opera 11-12.1 */
+    border-image: url(cxejohns.com/images/frame.png) 30 round;
+}
+
+#borderimg2 { 
+    border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(cxejohns.com/images/framer.png) 30 stretch; /* Safari 3.1-5 */
+    -o-border-image: url(cxejohns.com/images/frame.png) 30 stretch; /* Opera 11-12.1 */
+    border-image: url(cxejohns.com/images/frame.png) 30 stretch;
+}
+</style>
 <div class="frame">
     
 </div>
 
 <body>
-
+<div id="borderimg2">
   
   <div class="main">
 <h1>Welcome to my Wild World</h1>
@@ -35,6 +43,7 @@
     <div id="bloodZone">
       </div>
 </div>
+  </div>
 </body>
   <!--BODY~~BODY~~BODY~~BODY~~BODY~~BODY~~BODY~~BODY~~BODY~~BODY~~BODY~~BODY~~BODY~~BODY~~BODY~~-->
   <!--________________________________________________________________________________________~~-->
