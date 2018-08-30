@@ -1,0 +1,94 @@
+ <script>
+    $(document).ready(function(){
+    animateDiv();
+    
+});
+
+function makeNewPosition(){
+    
+    // Get viewport dimensions (remove the dimension of the div)
+    var h = $(window).height() - 50;
+    var w = $(window).width() - 50;
+    
+    var nh = Math.floor(Math.random() * h);
+    var nw = Math.floor(Math.random() * w);
+    
+    return [nh,nw];    
+    
+}
+
+function animateDiv(){
+    var newq = makeNewPosition();
+    var oldq = $('.move').offset();
+    var speed = calcSpeed([oldq.top, oldq.left], newq);
+    
+    $('.move').animate({ top: newq[0], left: newq[1] }, speed, function(){
+      animateDiv();        
+    });
+    
+};
+
+function calcSpeed(prev, next) {
+    
+    var x = Math.abs(prev[1] - next[1]);
+    var y = Math.abs(prev[0] - next[0]);
+    
+    var greatest = x > y ? x : y;
+    
+    var speedModifier = 0.1;
+
+    var speed = Math.ceil(greatest/speedModifier);
+
+    return speed;
+
+}
+
+$('div#add').addClass("move");
+$('div#add').delay(slow).removeClass("move");
+
+  </script>
+   <script>
+     // Snow Falling
+    function fallingSnow() {
+        var $snowflakes = $(),
+            createSnowflakes = function () {
+                var qt = 10;
+                for (var i = 0; i < qt; ++i) {
+          var $snowflake = $('<div class="blood"></div>');
+          $snowflake.css({
+                        'left': (Math.random() * $('#site').width()) + 'px',
+                        'top': (Math.random() * $('#site').height()) + 'px'
+                    });
+                    // add this snowflake to the set of snowflakes
+                    $snowflakes = $snowflakes.add($snowflake);
+                }
+                $('#bloodZone').prepend($snowflakes);
+            },
+            
+            runSnowStorm = function() {
+                $snowflakes.each(function() {
+                    
+                    var singleAnimation = function($flake) {
+                        $flake.animate({
+                            top: "500px",
+                            opacity : "0",
+                        }, Math.random()*-2500 + 5000, function(){
+                            // this particular snow flake has finished, restart again
+                            $flake.css({
+                 'left': (Math.random() * $('#site').width()) + 'px',
+                 'top': (- Math.random() * $('#site').height()) + 'px',
+                'opacity': 1
+                            });
+                            singleAnimation($flake);
+                        });
+                    };
+                    singleAnimation($(this));
+                });
+        };
+        
+        createSnowflakes();
+        runSnowStorm();
+    }
+    fallingSnow();
+    
+    </script>
