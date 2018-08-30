@@ -41,6 +41,7 @@
 <h1>Welcome to my Wild World</h1>
   </div>
   <div class='move'><a href="horse/play.html">Horse Racer</a></div>
+  <div class='move2'><a href="indifferent_sun.html">story</a></div>
   <div id="site">
     <div id="bloodZone">
       </div>
@@ -150,6 +151,60 @@ $('div#add').delay(slow).removeClass("move");
     </script>
   </footer>
   
+  
+  
+  <!-- sloppy html goes here copied and pasted lol sry -->
+    <!-- sloppy html goes here copied and pasted lol sry -->
+    <!-- sloppy html goes here copied and pasted lol sry -->
+    <!-- sloppy html goes here copied and pasted lol sry -->
+  
+   <script>
+    $(document).ready(function(){
+    animateDiv();
+    
+});
+
+function makeNewPosition(){
+    
+    // Get viewport dimensions (remove the dimension of the div)
+    var h = $(window).height() - 50;
+    var w = $(window).width() - 50;
+    
+    var nh = Math.floor(Math.random() * h);
+    var nw = Math.floor(Math.random() * w);
+    
+    return [nh,nw];    
+    
+}
+ 
+function animateDiv(){
+    var newq = makeNewPosition();
+    var oldq = $('.move2').offset();
+    var speed = calcSpeed([oldq.top, oldq.left], newq);
+    
+    $('.move2').animate({ top: newq[0], left: newq[1] }, speed, function(){
+      animateDiv();        
+    });
+    
+};
+
+function calcSpeed(prev, next) {
+    
+    var x = Math.abs(prev[1] - next[1]);
+    var y = Math.abs(prev[0] - next[0]);
+    
+    var greatest = x > y ? x : y;
+    
+    var speedModifier = 0.1;
+
+    var speed = Math.ceil(greatest/speedModifier);
+
+    return speed;
+
+}
+
+$('div#add').addClass("move2");
+$('div#add').delay(slow).remove2Class("move2");  </script>
 
 
 </html>
