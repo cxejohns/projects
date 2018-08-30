@@ -72,3 +72,22 @@ div.sunb{
 div.sunc{
     background-color:orange;
 }
+.frame {
+   width:300px;
+   height:300px;}
+   
+#borderimg1 { 
+    border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(cxejohns.com/images/frame2.png) 30 round; /* Safari 3.1-5 */
+    -o-border-image: url(cxejohns.com/images/frame2.png) 30 round; /* Opera 11-12.1 */
+    border-image: url(cxejohns.com/images/frame2.png) 30 round;
+}
+
+#borderimg2 { 
+    border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url(cxejohns.com/images/frame2.png) 30 stretch; /* Safari 3.1-5 */
+    -o-border-image: url(cxejohns.com/images/frame2.png) 30 stretch; /* Opera 11-12.1 */
+    border-image: url(cxejohns.com/images/frame2.png) 30 stretch;
+}
