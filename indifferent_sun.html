@@ -10,6 +10,12 @@
     });
 })
  </script>
+
+<div class='suna' name="animate"></div>
+<div class='sunb' name="animate"></div>
+<div class='sunc' name="animate"></div>
+
+
 <div class="story">
 <h1>Under an Indifferent Sun</h1>
 <h4>email: cxejohns@gmail.com</h4>
@@ -22,3 +28,37 @@
 <p>Know then, since silence has fled, that I have not wept in sorrow but rather in mourning, which is a blessed and blissful state, ever encircled, if not by Angels then their light, since it is mingled, suffused, soaked through, remember this, with Love.</p>
 <p>Finally, I do not call a flower a rose because it is red, for many are red but are no roses. Nor do I call a white rose by another name and strip him of the title "rose," for though he has chosen to display the drops of dew which daily moisten his neck and body as if they were sharp diamonds, speckling through him like needles through silk... or perfumed sweat from invisible glands... the simplest of intellects will immediately confess that dewdrops remain what they always were: the momentary reflections of a higher essence, overflowing from the utterly extravagant care of an innocent yet knowing wind. Therefore if I do see a red rose, and call it what it is, red, and a rose, please understand me. It is a rose and can be none other, at which I bend to inhale, pause breifly, and walk away.</p>
 </div>
+
+
+
+
+
+
+<script>
+  $(document).ready(function(){
+    $("div[name=animate]").each(function(){
+        animateDiv($(this));
+    });
+});
+
+function makeNewPosition(){
+    
+    // Get viewport dimensions (remove the dimension of the div)
+    var h = $(window).height() - 100;
+    var w = $(window).width() - 100;
+    
+    var nh = Math.floor(Math.random() * h);
+    var nw = Math.floor(Math.random() * w);
+    
+    return [nh,nw];    
+    
+}
+
+function animateDiv(c){
+    var newq = makeNewPosition();
+    $(c).delay(800).animate({ top: newq[0], left: newq[1] }, function(){
+      animateDiv(c);        
+    });
+    
+};
+</script>
