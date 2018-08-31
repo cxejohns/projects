@@ -137,3 +137,20 @@ div.sunblockc{
     to {top: 0px;}
 }
 
+
+#bouncer {
+    width:600px; 
+    height: 200px; 
+    position:fixed; 
+    border-bottom:black;}
+
+#bouncer li {
+    position: absolute;
+    width: 100px;
+    height: 60px;    
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    background-color:darkgreen;
+    text-align:center;
+            }
