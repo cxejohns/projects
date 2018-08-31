@@ -106,7 +106,7 @@ div.sunblockc{
     background-color:red;
 }
   
-  .levitate1 {
+.levitate1 {
     position :relative;
     animation: levitate1 4s infinite;
     animation-direction: alternate;
@@ -136,3 +136,4 @@ div.sunblockc{
     from {top: 200px;}
     to {top: 0px;}
 }
+
