@@ -92,3 +92,27 @@ $('div#add').delay(slow).removeClass("move");
     fallingSnow();
     
     </script>
+
+<script>
+ $(".targetc")
+    	.removeClass("shufflec")
+    	.addClass("shuffleb");
+    
+    $(".targeta")
+    	.removeClass("shufflea")
+    	.addClass("shufflec"); 
+      
+    $(".shuffleb")
+    	.removeClass("targetc")
+      .addClass("targetb");
+      
+    $(".shufflec")
+    	.removeClass("targeta")
+    	.addClass("targetc");
+    
+    $(".shufflea")
+    	.removeClass("targetb")
+    	.addClass("targeta");
+}
+
+</script>
