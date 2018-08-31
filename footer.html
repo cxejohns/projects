@@ -93,29 +93,6 @@ $('div#add').delay(slow).removeClass("move");
     
     </script>
 
-<script>
- $(".targetc")
-    	.removeClass("shufflec")
-    	.addClass("shuffleb");
-    
-    $(".targeta")
-    	.removeClass("shufflea")
-    	.addClass("shufflec"); 
-      
-    $(".shuffleb")
-    	.removeClass("targetc")
-      .addClass("targetb");
-      
-    $(".shufflec")
-    	.removeClass("targeta")
-    	.addClass("targetc");
-    
-    $(".shufflea")
-    	.removeClass("targetb")
-    	.addClass("targeta");
-}
-
-</script>
 
 <script>
   $(document).ready(function(){
@@ -144,5 +121,46 @@ function animateDiv(c){
     });
     
 };
+</script>
+
+<script>
+   $(document).ready(function () {
+
+        $("#shuffle").click(
+            function () {
+                shuffle();
+            }            
+        );
+    });
+
+function shuffle() {
+
+
+	 $(".shufflea").insertAfter(".shufflec");
+
+ 		$(".targetb")
+    	.removeClass("shuffleb")
+      .addClass("shufflea");
+      
+    $(".targetc")
+    	.removeClass("shufflec")
+    	.addClass("shuffleb");
+    
+    $(".targeta")
+    	.removeClass("shufflea")
+    	.addClass("shufflec"); 
+      
+    $(".shuffleb")
+    	.removeClass("targetc")
+      .addClass("targetb");
+      
+    $(".shufflec")
+    	.removeClass("targeta")
+    	.addClass("targetc");
+    
+    $(".shufflea")
+    	.removeClass("targetb")
+    	.addClass("targeta");
+}
 </script>
 
