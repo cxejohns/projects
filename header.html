@@ -15,8 +15,15 @@
   width: 100%;
   height: 100px;
   border: 1px solid grey;
-  animation: animate 0.5s infinite;
-    
+  animation: animate 0.5s infinite;  
+}
+ a {
+ animation: hand 1s infinite;
+ /*cursor:url(http://www.cxejohns.com/images/pointer/hand1.png), auto;*/
+}
+a:hover {
+  font-size: 400%;
+  text-shadow: -3px -3px 10px black;
 }
   
  @keyframes animate{ 
@@ -44,6 +51,26 @@
     cursor: url("http://www.cxejohns.com/images/flameman1.png"), auto;
   }
 }
+  
+    @keyframes hand {
+    0% {cursor: url("http://www.cxejohns.com/images/pointer/hand1.png"), auto;}
+    6.25% {cursor: url("http://www.cxejohns.com/images/pointer/hand1.png"), auto;}
+  12.5% {cursor: url("http://www.cxejohns.com/images/pointer/hand2.png"), auto;}
+  18.75% {cursor: url("http://www.cxejohns.com/images/pointer/hand3.png"), auto;}
+  25% {cursor: url("http://www.cxejohns.com/images/pointer/hand4.png"), auto;}
+31.25% {cursor: url("http://www.cxejohns.com/images/pointer/hand5.png"), auto;}
+37.5% {cursor: url("http://www.cxejohns.com/images/pointer/hand6.png"), auto;}
+43.75% {cursor: url("http://www.cxejohns.com/images/pointer/hand7.png"), auto;}
+50% {cursor: url("http://www.cxejohns.com/images/pointer/hand8.png"), auto;}
+56.25% {cursor: url("http://www.cxejohns.com/images/pointer/hand9.png"), auto;}
+62.5% {cursor: url("http://www.cxejohns.com/images/pointer/hand10.png"), auto;}
+68.75% {cursor: url("http://www.cxejohns.com/images/pointer/hand11.png"), auto;}
+75% {cursor: url("http://www.cxejohns.com/images/pointer/hand12.png"), auto;}
+81.25% {cursor: url("http://www.cxejohns.com/images/pointer/hand13.png"), auto;}
+87.5% {cursor: url("http://www.cxejohns.com/images/pointer/hand14.png"), auto;}
+93.75% {cursor: url("http://www.cxejohns.com/images/pointer/hand15.png"), auto;}
+100% {cursor: url("http://www.cxejohns.com/images/pointer/hand16.png"), auto;}
+  }
 
   div.move {
 position:fixed;  
