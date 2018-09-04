@@ -33,18 +33,18 @@ height:10000px;
 background-color:yellow;
 position: fixed;
 opacity: .3;
-box-shadow: -100px -100px 200px yellow, 100px 100px 200px yellow;
+box-shadow: -100px -100px 200px yellow, 100px 100px 200px yellow, 100px -100px 200px yellow, -100px 100px 200px yellow;
     
 }
 div.sunblockb{
     background-color:orange;
     opacity: .3;
-  box-shadow: -100px -100px 200px yellow, 100px 100px 200px orange;
+  box-shadow: -100px -100px 200px yellow, 100px 100px 200px orange, 100px -100px 200px orange, -100px 100px 200px orange;
 }
 div.sunblockc{
     background-color:red;
     opacity: .3;
- box-shadow: -100px -100px 200px yellow, 100px 100px 200px red;
+box-shadow: -100px -100px 200px red, 100px 100px 200px red, 100px -100px 200px red, -100px 100px 200px red;
 }
   
 .levitate1 {
