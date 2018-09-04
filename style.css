@@ -33,15 +33,18 @@ height:10000px;
 background-color:yellow;
 position: fixed;
 opacity: .3;
+box-shadow: -50px -50px 100px yellow;
     
 }
 div.sunblockb{
     background-color:orange;
     opacity: .3;
+  box-shadow: -50px -50px 100px orange;
 }
 div.sunblockc{
     background-color:red;
     opacity: .3;
+  box-shadow: -50px -50px 100px red;
 }
   
 .levitate1 {
