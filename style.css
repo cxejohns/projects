@@ -39,7 +39,7 @@ box-shadow: -100px -100px 200px yellow, 100px 100px 200px yellow, 100px -100px 2
 div.sunblockb{
     background-color:orange;
     opacity: .3;
-  box-shadow: -100px -100px 200px yellow, 100px 100px 200px orange, 100px -100px 200px orange, -100px 100px 200px orange;
+  box-shadow: -100px -100px 200px orange, 100px 100px 200px orange, 100px -100px 200px orange, -100px 100px 200px orange;
 }
 div.sunblockc{
     background-color:red;
