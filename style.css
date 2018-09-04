@@ -29,35 +29,7 @@
 }
 /* Chrome, Safari, Opera */
 
-@-webkit-keyframes bounce {
-  0% {
-    background-color: red;
-    top: 0px;
-  }
-  50% {
-    background-color: orange;
-    top: 200px;
-  }
-  100% {
-    background-color: yellow;
-    top: 0px;
-  }
-}
-/* Standard syntax */
 
-@keyframes bounce {
-  0% {
-    background-color: red;
-    top: 0px;
-  }
-  50% {
-    background-color: orange;
-    top: 200px;
-  }
-  100% {
-    background-color: yellow;
-    top: 0px;
-  }
   
   div.suna, div.sunb, div.sunc {
 width: 2px;
@@ -201,3 +173,34 @@ div.sunblockc{
 @keyframes moveY {
   from { top: 0; } to { top: 280px; }
 }
+
+
+@-webkit-keyframes bounce {
+  0% {
+    background-color: red;
+    top: 0px;
+  }
+  50% {
+    background-color: orange;
+    top: 200px;
+  }
+  100% {
+    background-color: yellow;
+    top: 0px;
+  }
+}
+/* Standard syntax */
+
+@keyframes bounce {
+  0% {
+    background-color: red;
+    top: 0px;
+  }
+  50% {
+    background-color: orange;
+    top: 200px;
+  }
+  100% {
+    background-color: yellow;
+    top: 0px;
+  }
