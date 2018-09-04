@@ -104,7 +104,7 @@ box-shadow: -100px -100px 200px red, 100px 100px 200px red, 100px -100px 200px r
   width: 600px;
   height: 400px;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 .box b {
   display: block;
