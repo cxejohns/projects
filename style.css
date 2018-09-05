@@ -101,7 +101,7 @@ box-shadow: -100px -100px 200px red, 100px 100px 200px red, 100px -100px 200px r
   position: relative;
   overflow: visible;
 }
-.test #bounce1 {
+.bounce #bounce1 {
   display: block;
 
   background-color: white;
