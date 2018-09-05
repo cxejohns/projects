@@ -104,7 +104,7 @@ box-shadow: -100px -100px 200px red, 100px 100px 200px red, 100px -100px 200px r
 .bounce #bounce1 {
   display: block;
 
-  background-color: white;
+  background-color: transparant;
   position: absolute;
   -webkit-animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
   -moz-animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
