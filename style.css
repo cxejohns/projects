@@ -6,7 +6,101 @@ html {
     --animHeight:300px;
     --bounce1H: .33;
     --bounce1W: .33;
+  width: 100%;
+  height: 100%;
+  border: 1px solid grey;
+  animation: animate 0.5s infinite;  
 }
+
+.blood {
+    top:0px;
+    left:0px;
+    position:absolute;
+    z-index:00;
+    width:2px;
+    height:2000px;
+    background:red;
+}
+ a {
+ animation: hand 1s infinite;
+ /*cursor:url(http://www.cxejohns.com/images/pointer/hand1.png), auto;*/
+}
+a:hover {
+  font-size: 400%;
+  text-shadow: -3px -3px 10px black;
+}
+  
+ @keyframes animate{ 
+ 0%{ 
+    cursor: url("http://www.cxejohns.com/images/flameman1.png"), auto;
+  }
+  
+  20%{ 
+    cursor: url("http://www.cxejohns.com/images/flameman2.png"), auto;
+  }
+
+  40%{ 
+    cursor: url("http://www.cxejohns.com/images/flameman3.png"), auto;
+  }
+
+  60%{ 
+    cursor: url("http://www.cxejohns.com/images/flameman4.png"), auto;
+  }
+  
+  80%{ 
+    cursor: url("http://www.cxejohns.com/images/flameman5.png"), auto;
+  }
+ 
+  100%{ 
+    cursor: url("http://www.cxejohns.com/images/flameman1.png"), auto;
+  }
+}
+  
+    @keyframes hand {
+    0% {cursor: url("http://www.cxejohns.com/images/pointer/hand1.png"), auto;}
+    6.25% {cursor: url("http://www.cxejohns.com/images/pointer/hand1.png"), auto;}
+  12.5% {cursor: url("http://www.cxejohns.com/images/pointer/hand2.png"), auto;}
+  18.75% {cursor: url("http://www.cxejohns.com/images/pointer/hand3.png"), auto;}
+  25% {cursor: url("http://www.cxejohns.com/images/pointer/hand4.png"), auto;}
+31.25% {cursor: url("http://www.cxejohns.com/images/pointer/hand5.png"), auto;}
+37.5% {cursor: url("http://www.cxejohns.com/images/pointer/hand6.png"), auto;}
+43.75% {cursor: url("http://www.cxejohns.com/images/pointer/hand7.png"), auto;}
+50% {cursor: url("http://www.cxejohns.com/images/pointer/hand8.png"), auto;}
+56.25% {cursor: url("http://www.cxejohns.com/images/pointer/hand9.png"), auto;}
+62.5% {cursor: url("http://www.cxejohns.com/images/pointer/hand10.png"), auto;}
+68.75% {cursor: url("http://www.cxejohns.com/images/pointer/hand11.png"), auto;}
+75% {cursor: url("http://www.cxejohns.com/images/pointer/hand12.png"), auto;}
+81.25% {cursor: url("http://www.cxejohns.com/images/pointer/hand13.png"), auto;}
+87.5% {cursor: url("http://www.cxejohns.com/images/pointer/hand14.png"), auto;}
+93.75% {cursor: url("http://www.cxejohns.com/images/pointer/hand15.png"), auto;}
+100% {cursor: url("http://www.cxejohns.com/images/pointer/hand16.png"), auto;}
+  }
+
+  div.move {
+position:fixed;  
+}
+div.move a{
+font-size: 40px;
+color: #785bb7;
+text-shadow: 12px 12px 10px black;
+}
+  body {
+  background-color:#3a7f87;
+  color:black;
+  background-image: url("cxejohns.com/images/frame.png") no-repeat center center fixed;
+  background-size: cover;
+}
+    div.main {
+   display: inline-block;
+   border: 5px groove pink;
+   background-image: url("http://www.cxejohns.com/images/flames.jpg"); 
+   padding: 0px 20px;
+   color: yellow;
+   margin: auto;
+   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+   }
+
+
 
 .story {
   width: 400px;
