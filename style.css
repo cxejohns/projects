@@ -235,7 +235,7 @@ box-shadow: -100px -100px 200px red, 100px 100px 200px red, 100px -100px 200px r
   height: 100px;
   background-color: red;
   position: relative;
-  margin-left: 200px;
+  margin-left: 0px;
   text-align: center center;
   border-radius: 50px 50px 50px 50px;
   -webkit-animation-name: bounce;
