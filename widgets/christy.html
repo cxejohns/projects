@@ -1,0 +1,150 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script>//setTimeout(function(){window.location.reload(1);}, 500);</script>
+<script>
+	$(document).ready(function funDraw(){
+		var randnum = Math.ceil(Math.random()*10) - 1;
+		var effects= new Array("blind", "bounce", "drop", "explode", "fold", "puff","shake", "slide", "pulsate", "fade");
+		var effect = "\""+effects[randnum]+"\"";
+		
+			$('div.fire').click(function () {
+				$(this).removeClass('fire', "drop");
+			});
+			$('div.firedown').click(function () {
+				$(this).hide(effects[randnum], { direction: "down" }, "slow" );
+			});
+			$('div.black').click(function () {
+				$(this).removeClass('black');
+				$(this).addClass('white');
+			});
+			$('div.white').click(function () {
+				$(this).hide("drop", { direction: "down" }, "slow" );
+			});
+		setTimeout(funDraw, 10000);
+	});
+</script>
+<style>
+
+div.pillar {
+	font-size: 1rem; 
+	display: inline-block; 
+	padding:0; 
+	margin:0;
+	width:9.7%; 
+	height:100%;
+	position:relative;
+}
+div.husk {
+	width: 100%;
+	height: 10%;
+	position:relative;
+} 
+div.black {
+	width: 100%;
+	height:100%;
+	float: left;
+	background-color: black;
+	background-image: url("blacktile.gif");
+	background-size: 100% 100%;
+}
+div.white {
+	width: 100%;
+	height:100%;
+	float: left;
+	background-color: white;
+	background-image: url("whitetile.gif");
+	background-size: 100% 100%;
+}
+
+div.black {
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	background-color: red;
+	background-size: 100% 100%;
+	background-image: url("black.gif");
+}
+div.white {
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	background-color: red;
+	background-size: 100% 100%;
+	background-image: url("white.gif");
+}
+div.fire {
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	background-color: red;
+	background-size: 100% 100%;
+	background-image: url("fire.gif");
+}
+div.firedown {
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	background-color: red;
+	background-image: url("firedown.gif");
+	background-size: 100% 100%;
+}
+div.hidden {
+	display:none;
+}
+.canvas_1 {
+	width:100%; 
+	height:100%; 
+	margin: 0 auto;
+	background-image: url("christy_5_stars.jpg");
+	background-size: cover;
+	
+});
+}
+</style>
+</head>
+<body  onclick="playAudio()">
+<div class="canvas_1">
+
+
+<!-- F i R E -->
+<!-- COLUMN 1 -->
+<div class="pillar"><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div></div>
+<!-- COLUMN 2 -->
+<div class="pillar"><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div></div>
+<!-- COLUMN 3 -->
+<div class="pillar"><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div></div>
+<!-- COLUMN 4 -->
+<div class="pillar"><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div></div>
+<!-- COLUMN 5 -->
+<div class="pillar"><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div></div>
+<!-- COLUMN 6 -->
+<div class="pillar"><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div></div>
+<!-- COLUMN 7 -->
+<div class="pillar"><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div></div>
+<!-- COLUMN 8 -->
+<div class="pillar"><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div></div>
+<!-- COLUMN 9 -->
+<div class="pillar"><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div></div>
+<!-- COLUMN 10 -->
+<div class="pillar"><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div><div class="husk"><div class="block fire"></div></div></div>
+
+
+
+</div>
+</div>
+<audio id="myAudio">
+<source src="space_gun.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+} 
+</script>
